@@ -25,6 +25,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		eggGroups: ["Undiscovered"],
 		requiredAbility: "Cleansing Flames",
 		battleOnly: "Noka",
+	},
 	bulbasaur: {
 		num: 1,
 		name: "Bulbasaur",
@@ -19251,5 +19252,5 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		eggGroups: ["Undiscovered"],
 		gen: 5,
 	},
-}
+};
 // removed a ; at the end of line 19254 to fix(?)
