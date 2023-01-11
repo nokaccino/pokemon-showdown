@@ -93909,4 +93909,5 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			{generation: 5, level: 47, moves: ["darkpulse", "flamethrower", "hyperbeam", "icebeam"]},
 		],
 	},
-};
+}
+// removed a ; from line 93912
