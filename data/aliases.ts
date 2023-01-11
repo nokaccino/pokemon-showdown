@@ -1,5 +1,6 @@
 export const Aliases: {[alias: string]: string} = {
 	// formats
+	ikus: "[Gen 9+] IKUS Mod",
 	randbats: "[Gen 9] Random Battle",
 	uber: "[Gen 9] Ubers",
 	anythinggoes: "[Gen 8] Anything Goes",
@@ -123,6 +124,7 @@ export const Aliases: {[alias: string]: string} = {
 	whitedoor: "Pokestar White-Door",
 
 	// formes
+	shnoka: "Noka-Shadow",
 	bugceus: "Arceus-Bug",
 	darkceus: "Arceus-Dark",
 	dragonceus: "Arceus-Dragon",

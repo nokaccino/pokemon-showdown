@@ -1,4 +1,14 @@
 export const FormatsData: {[k: string]: SpeciesFormatsData} = {
+	
+	noka: {
+		tier: "OU",
+		doublesTier: "DOU",
+		natDexTier: "UU",
+	},
+	shnoka: {	
+		tier: "Illegal",
+	},
+
 	bulbasaur: {
 		isNonstandard: "Past",
 		tier: "Illegal",
@@ -1592,8 +1602,9 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "RU",
 	},
 	sneasler: {
-		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tier: "UU",
+		doublesTier: "(DRU)",
+		natDexTier: "UU",
 	},
 	teddiursa: {
 		tier: "LC",

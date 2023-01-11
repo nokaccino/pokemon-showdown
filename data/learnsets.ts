@@ -1,6 +1,24 @@
 /* eslint-disable max-len */
 
 export const Learnsets: {[speciesid: string]: LearnsetData} = {
+	noka: {
+		learnset: {
+			flareblitz: ["9M"],
+			doubleedge: ["9M"],
+			earthquake: ["9M"],
+			flamethrower: ["9M"],
+			spicyextract: ["9M"],
+			corrosivegas: ["9M"],
+			thief: ["9M"],
+			trick: ["9M"],
+			nastyplot: ["9M"],
+			substitute: ["9M"],
+			shadowsneak: ["9M"],
+			flameburst: ["9M"],
+			blastburn: ["9M"],
+			terablast: ["9M"],
+			closecombat: ["9M"],
+		},	
 	missingno: {
 		learnset: {
 			blizzard: ["3L1"],

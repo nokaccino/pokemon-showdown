@@ -39,6 +39,26 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 0.1,
 		num: 0,
 	},
+	cleansingflames: {
+		onResidualOrder: 29,
+		onResidual(pokemon) {
+			if (pokemon.baseSpecies.baseSpecies !== 'Noka' || pokemon.transformed || !pokemon.hp) return;
+			if (pokemon.species.id === 'shadownoka' || pokemon.hp > pokemon.maxhp / 2) return;
+			this.add('-activate', pokemon, 'ability: Power Construct');
+			pokemon.formeChange('Noka-Shadow', this.effect, true);
+			pokemon.baseMaxhp = Math.floor(Math.floor(
+				2 * pokemon.species.baseStats['hp'] + pokemon.set.ivs['hp'] + Math.floor(pokemon.set.evs['hp'] / 4) + 100
+			) * pokemon.level / 100 + 10);
+			const newMaxHP = pokemon.volatiles['dynamax'] ? (2 * pokemon.baseMaxhp) : pokemon.baseMaxhp;
+			pokemon.hp = newMaxHP - (pokemon.maxhp - pokemon.hp);
+			pokemon.maxhp = newMaxHP;
+			this.add('-heal', pokemon, pokemon.getHealth, '[silent]');
+		},
+		isPermanent: true,
+		name: "Power Construct",
+		rating: 5,
+		num: 211,
+	},
 	adaptability: {
 		onModifyMove(move) {
 			move.stab = 2;

@@ -49,15 +49,15 @@ export const Moves: {[moveid: string]: MoveData} = {
 	absorb: {
 		num: 71,
 		accuracy: 100,
-		basePower: 20,
+		basePower: 50,
 		category: "Special",
 		name: "Absorb",
-		pp: 25,
+		pp: 15,
 		priority: 0,
 		flags: {protect: 1, mirror: 1, heal: 1},
 		drain: [1, 2],
 		secondary: null,
-		target: "normal",
+		target: "allAdjacentFoes",
 		type: "Grass",
 		contestType: "Clever",
 	},
@@ -85,7 +85,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		priority: 0,
 		flags: {protect: 1, mirror: 1},
 		secondary: {
-			chance: 10,
+			chance: 50,
 			boosts: {
 				spd: -1,
 			},
@@ -131,7 +131,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	acidspray: {
 		num: 491,
 		accuracy: 100,
-		basePower: 40,
+		basePower: 50,
 		category: "Special",
 		name: "Acid Spray",
 		pp: 20,
