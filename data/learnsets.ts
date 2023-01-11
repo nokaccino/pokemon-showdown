@@ -28569,7 +28569,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			iciclespear: ["8M"],
 			icywind: ["9M", "9L24", "8M", "8L24", "7T", "7L14", "6T", "6L14", "5T", "5L28", "4T", "4L28"],
 			irontail: ["8M", "7T", "6T", "5T", "4M"],
-			knockoff: ["7T", "6T", "5T", "4T"],
+			knockoff: ["9M","7T", "6T", "5T", "4T"],
 			laserfocus: ["7T"],
 			lashout: ["8T"],
 			leer: ["9L1", "8L1", "7L1", "6L1", "5L1", "4L1"],
