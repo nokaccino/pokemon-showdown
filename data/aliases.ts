@@ -124,7 +124,7 @@ export const Aliases: {[alias: string]: string} = {
 	whitedoor: "Pokestar White-Door",
 
 	// formes
-	shnoka: "Noka-Shadow",
+	nokashadow: "Noka-Shadow",
 	bugceus: "Arceus-Bug",
 	darkceus: "Arceus-Dark",
 	dragonceus: "Arceus-Dragon",
