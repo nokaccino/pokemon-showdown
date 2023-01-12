@@ -15,6 +15,12 @@ describe('Team Validator', function () {
 			}
 		}
 	});
+	it('should reject non-existent Pokemon', function () {
+		const team = [
+			{species: 'nonexistentPokemon', moves: ['thunderbolt'], evs: {hp: 1}},
+		];
+		assert.false.legalTeam(team, 'gen7customgame');
+	});
 
 	it('should reject non-existent items', function () {
 		const team = [
@@ -26,6 +32,13 @@ describe('Team Validator', function () {
 	it('should reject non-existent abilities', function () {
 		const team = [
 			{species: 'pikachu', moves: ['thunderbolt'], ability: 'nonexistentAbility', evs: {hp: 1}},
+		];
+		assert.false.legalTeam(team, 'gen7customgame');
+	});
+
+	it('should reject non-existent moves', function () {
+		const team = [
+			{species: 'pikachu', ability: 'static', moves: ['nonexistentMove'], evs: {hp: 1}},
 		];
 		assert.false.legalTeam(team, 'gen7customgame');
 	});
@@ -94,11 +107,47 @@ describe('Team Validator', function () {
 		assert.false.legalTeam(team, 'gen8ou');
 	});
 
+	it('should accept legal movesets', function () {
+		let team = [
+			{species: 'pikachu', ability: 'static', moves: ['agility', 'protect', 'thunder', 'thunderbolt'], evs: {hp: 1}},
+		];
+		assert.legalTeam(team, 'gen7anythinggoes');
+
+		team = [
+			{species: 'meowstic', ability: 'prankster', moves: ['trick', 'magiccoat'], evs: {hp: 1}},
+		];
+		assert.legalTeam(team, 'gen7anythinggoes');
+	});
+
 	it('should reject illegal movesets', function () {
 		const team = [
 			{species: 'pikachu', ability: 'static', moves: ['blastburn', 'frenzyplant', 'hydrocannon', 'dragonascent'], evs: {hp: 1}},
 		];
 		assert.false.legalTeam(team, 'gen7anythinggoes');
+	});
+
+	it('should reject banned Pokemon', function () {
+		let team = [
+			{species: 'arceus', ability: 'multitype', item: 'dragoniumz', moves: ['judgment'], evs: {hp: 1}},
+		];
+		assert.false.legalTeam(team, 'gen71v1');
+
+		team = [
+			{species: 'rayquazamega', ability: 'deltastream', moves: ['dragonascent'], evs: {hp: 1}},
+		];
+		assert.false.legalTeam(team, 'gen7ou');
+
+		team = [
+			{species: 'mimikyutotem', ability: 'disguise', moves: ['shadowsneak'], evs: {hp: 1}},
+		];
+		assert.false.legalTeam(team, 'gen7ou@@@-mimikyu');
+
+		// bans should override past unbans
+		team = [
+			{species: 'torkoal', ability: 'drought', moves: ['bodyslam'], evs: {hp: 1}},
+		];
+		assert.legalTeam(team, 'gen7ou@@@-drought,+drought');
+		assert.false.legalTeam(team, 'gen7ou@@@-drought,+drought,-drought');
 	});
 
 	it('should validate Sketch', function () {
