@@ -544,7 +544,7 @@ export const Formats: FormatList = [
 
 		mod: 'ikus',
 		rated: false,
-		ruleset: ['+Unreleased', '+Nonexistent', '+CAP', 'Team Preview', 'HP Percentage Mod', 'Cancel Mod', 'Endless Battle Clause', 'Sleep Clause Mod'],
+		ruleset: ['+Unreleased', 'Team Preview', 'HP Percentage Mod', 'Cancel Mod', 'Endless Battle Clause', 'Sleep Clause Mod'],
 	},
 	{
 		name: "[Gen 9] VoltTurn Mayhem",
