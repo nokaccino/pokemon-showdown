@@ -25,14 +25,8 @@ export const Formats: FormatList = [
 	{
 		section: "S/V Singles",
 	},
-	{
-		name: "[Gen 9+] IKUS Mod",
-		desc: `A modified multi-generation ruleset implementing various new Pok&eacute;mon, abilities, balances, and buffs.`,
 
-		mod: 'gen9',
-		ruleset: ['Species Clause', 'HP Percentage Mod', 'Cancel Mod', 'Sleep Clause Mod'],
-	},
-	
+
 	{
 		name: "[Gen 9] Random Battle",
 		desc: `Randomized teams of Pok&eacute;mon with sets that are generated to be competitively viable.`,
