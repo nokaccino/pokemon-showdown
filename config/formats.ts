@@ -29,9 +29,9 @@ export const Formats: FormatList = [
 		name: "[Gen 9+] IKUS Mod",
 		desc: `Incorporates various balances to existing PKMN while adding new content.`,
 
-		mod: 'gen9',
+		mod: 'ikus',
 		rated: false,
-		ruleset: ['-Nonexistent', 'Team Preview', 'HP Percentage Mod', 'Cancel Mod', 'Endless Battle Clause', 'Sleep Clause Mod'],
+		ruleset: ['+Nonexistent', '+CAP', '!Obtainable Abilities', 'Team Preview', 'HP Percentage Mod', 'Cancel Mod', 'Endless Battle Clause', 'Sleep Clause Mod'],
 	},
 
 	{
