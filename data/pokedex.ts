@@ -1,6 +1,6 @@
 export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	noka: {
-		num: 3000,
+		num: -3000,
 		name: "Noka",
 		types: ["Normal", "Fire"],
 		genderRatio: {M: 0.5, F: 0.5},
@@ -10,9 +10,10 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		weightkg: 80,
 		color: "White",
 		eggGroups: ["Undiscovered"],
+		gen: 9,
 	},
 	shadownoka: {
-		num: 3001,
+		num: -3001,
 		name: "Noka-Shadow",
 		baseSpecies: "Noka",
 		forme: "Shadow",
@@ -25,6 +26,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		eggGroups: ["Undiscovered"],
 		requiredAbility: "Cleansing Flames",
 		battleOnly: "Noka",
+		gen: 9,
 	},
 	bulbasaur: {
 		num: 1,
