@@ -31,7 +31,7 @@ export const Formats: FormatList = [
 
 		mod: 'ikus',
 		rated: false,
-		ruleset: ['+Nonexistent', '+CAP', '!Obtainable Abilities', 'Team Preview', 'HP Percentage Mod', 'Cancel Mod', 'Endless Battle Clause', 'Sleep Clause Mod'],
+		ruleset: ['+Nonexistent', '+CAP', 'Team Preview', 'HP Percentage Mod', 'Cancel Mod', 'Endless Battle Clause', 'Sleep Clause Mod'],
 	},
 
 	{
