@@ -10099,10 +10099,10 @@ export const Moves: {[moveid: string]: MoveData} = {
 	knockoff: {
 		num: 282,
 		accuracy: 100,
-		basePower: 65,
+		basePower: 70,
 		category: "Physical",
 		name: "Knock Off",
-		pp: 20,
+		pp: 15,
 		priority: 0,
 		flags: {contact: 1, protect: 1, mirror: 1},
 		onBasePower(basePower, source, target, move) {
@@ -10128,7 +10128,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	kowtowcleave: {
 		num: 869,
 		accuracy: true,
-		basePower: 85,
+		basePower: 90,
 		category: "Physical",
 		name: "Kowtow Cleave",
 		pp: 10,
@@ -10213,7 +10213,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	lastresort: {
 		num: 387,
 		accuracy: 100,
-		basePower: 140,
+		basePower: 150,
 		category: "Physical",
 		name: "Last Resort",
 		pp: 5,

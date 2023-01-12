@@ -676,6 +676,7 @@ export const Aliases: {[alias: string]: string} = {
 	wp: "Weakness Policy",
 
 	// pokemon
+	noka: "Noka",
 	aboma: "Abomasnow",
 	aegi: "Aegislash",
 	aegiblade: "Aegislash-Blade",
@@ -1040,6 +1041,7 @@ export const Aliases: {[alias: string]: string} = {
 	windrage: "G-Max Wind Rage",
 
 	// Japanese names
+	nokai: "Noka",
 	fushigidane: "Bulbasaur",
 	fushigisou: "Ivysaur",
 	fushigibana: "Venusaur",

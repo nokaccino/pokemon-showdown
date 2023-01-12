@@ -18,6 +18,12 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			blastburn: ["9M"],
 			terablast: ["9M"],
 			closecombat: ["9M"],
+			nightslash: ["9M"],
+			furyswipes: ["9M"],
+			fling: ["9M"],
+			metalclaw: ["9M"],
+			flamecharge: ["9M"],
+			copycat: ["9M"],
 		},	
 	},
 	missingno: {
