@@ -28,13 +28,11 @@ export const Formats: FormatList = [
 	{
 		name: "[Gen 9+] IKUS Mod",
 		desc: `A modified multi-generation ruleset implementing various new Pok&eacute;mon, abilities, balances, and buffs.`,
-		threads: [
-			`&bullet; <a href="https://www.smogon.com/forums/threads/3712619/">Random Battle Suggestions</a>`,
-		],
 
 		mod: 'gen9',
-		ruleset: ['!Obtainable Abilities', 'Species Clause', 'HP Percentage Mod', 'Cancel Mod', 'Sleep Clause Mod'],
+		ruleset: ['Species Clause', 'HP Percentage Mod', 'Cancel Mod', 'Sleep Clause Mod'],
 	},
+	
 	{
 		name: "[Gen 9] Random Battle",
 		desc: `Randomized teams of Pok&eacute;mon with sets that are generated to be competitively viable.`,
