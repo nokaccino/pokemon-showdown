@@ -25,7 +25,14 @@ export const Formats: FormatList = [
 	{
 		section: "S/V Singles",
 	},
+	{
+		name: "[Gen 9+] IKUS Mod",
+		desc: `Incorporates various balances to existing PKMN while adding new content.`,
 
+		mod: 'gen9',
+		rated: false,
+		ruleset: ['-Nonexistent', 'Team Preview', 'HP Percentage Mod', 'Cancel Mod', 'Endless Battle Clause', 'Sleep Clause Mod'],
+	},
 
 	{
 		name: "[Gen 9] Random Battle",
@@ -43,7 +50,6 @@ export const Formats: FormatList = [
 
 		mod: 'gen9',
 		team: 'random',
-		challengeShow: false,
 		rated: false,
 		ruleset: ['Obtainable', 'Species Clause', 'HP Percentage Mod', 'Cancel Mod', 'Sleep Clause Mod'],
 	},
