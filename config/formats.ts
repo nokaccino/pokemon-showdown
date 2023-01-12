@@ -25,14 +25,7 @@ export const Formats: FormatList = [
 	{
 		section: "S/V Singles",
 	},
-	{
-		name: "[Gen 9+] IKUS Mod",
-		desc: `Incorporates various balances to existing PKMN while adding new content.`,
-
-		mod: 'ikus',
-		rated: false,
-		ruleset: ['+Unreleased', '!Obtainable Abilities', '+Nonexistent', '+CAP', 'Team Preview', 'HP Percentage Mod', 'Cancel Mod', 'Endless Battle Clause', 'Sleep Clause Mod'],
-	},
+	
 
 	{
 		name: "[Gen 9] Random Battle",
@@ -544,6 +537,14 @@ export const Formats: FormatList = [
 	{
 		section: "OM of the Month",
 		column: 2,
+	},
+	{
+		name: "[Gen 9+] IKUS Mod",
+		desc: `Incorporates various balances to existing PKMN while adding new content.`,
+
+		mod: 'ikus',
+		rated: false,
+		ruleset: ['+Unreleased', '!Obtainable Abilities', '+Nonexistent', '+CAP', 'Team Preview', 'HP Percentage Mod', 'Cancel Mod', 'Endless Battle Clause', 'Sleep Clause Mod'],
 	},
 	{
 		name: "[Gen 9] VoltTurn Mayhem",
